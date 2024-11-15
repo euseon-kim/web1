@@ -9,7 +9,7 @@ body {margin: 0; padding: 0; background-color: white;  font-family: 'Pretendard-
 ul, li {list-style-type: none;}
 .container {margin: 5% 5%; padding: 0;}
 
-.main-section{display: none;}
+/* .main-section{display: none;} */
 
 /* main-section */
 .main-section {width: 100%; height: 100vh;}
