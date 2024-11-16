@@ -9,92 +9,99 @@
 </head>
 
 <body>
-    <header class="head">
-        <div class="logo"> 
-            <a href="#"><img src="image/logo_wh.svg" alt=""></a>   
-        </div>
-        <div class="menu">
-            <ul class="navbar">
-                <li class="menu-item">
-                    <a href="#">회사소개</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">오뚜기소개</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">오시는길</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">인재채용</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">제품이야기</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">브랜드스토리</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">제품소개</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">브랜드경험</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">공식캐릭터</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">공모전</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">이벤트</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">홍보센터</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">공지사항</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">고객서비스</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">고객의소리</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">고객상담</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item ">
-                    <a href="#" class="menuBtn">
-                        <img src="image/btn_menu_w_hover.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
-    </header>
-
-    </div>
-    <div class="main-section">
-        <div class="loading">
+    <div class="loader" id="loader">
+        <div class="loading-text">
+            <p>A world that is happy with the taste of nature</p>
             <h1>자연과 함께 맛으로 행복한 세상</h1>
         </div>
-        <div class="video-container">
-            <video width="100%" height="100%" src="image/videoplayback.mp4" autoplay loop muted playsinline>
-        </div>
     </div>
+    <div class="main-content" id="main-content">
+        <header class="head" id="mainHeader">
+            <div class="logo"> 
+                <a href="#"><img src="image/logo_wh.svg" alt=""></a>   
+            </div>
+            <div class="menu">
+                <ul class="navbar">
+                    <li class="menu-item">
+                        <a href="#">회사소개</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#">오뚜기소개</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">오시는길</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">인재채용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">제품이야기</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#">브랜드스토리</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">제품소개</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">브랜드경험</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#">공식캐릭터</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">공모전</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">이벤트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">홍보센터</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#">공지사항</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">고객서비스</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="#">고객의소리</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">고객상담</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="menuBtn">
+                            <img src="image/btn_menu_w_hover.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </header>
+        <div class="main-section">
+            <div class="video-container">
+                <video width="100%" height="100%" src="image/videoplayback.mp4" autoplay loop muted playsinline>
+            </div>
+        </div>
+    
+        </div>
+        
+    </div>
+    
     <div class="container">
         <div class="section-two">
-            <h2 class="section-two-title"><span> Global</span> OTTOGI</h3>
+            <h2 class="section-two-title"><span> Global</span> OTTOGI</h2>
                 <div class="global-one">
                     <h3>중국 강소 부도옹식품유한공사</h3>
                     <p>1994년 6월 설립, 중국 강소성 소재,
@@ -239,6 +246,11 @@
             </div>
         </div>
 
+<!-- 
+         GSAP 라이브러리 로드  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+        <!-- ScrollTrigger 플러그인 로드  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script> 
         <script src="script.js"></script>
 </body>
 
