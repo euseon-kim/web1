@@ -49,6 +49,7 @@ gsap.utils.toArray('.global-one, .global-two, .global-three').forEach((section, 
       });
   });
 
+  
 
 // gsap.registerPlugin(ScrollTrigger);
 
