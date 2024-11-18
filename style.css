@@ -77,19 +77,19 @@ ul, li {list-style-type: none; }
 }
 
 /* header */
-.logo img {width: 100px;height: 100px;margin: 20px 30px; }
-.head {display: flex;justify-content: space-between;align-items: center;padding: 20px 30px;
+.logo img {width: 58px;height: 58px;margin: 4px 30px; }
+.head {display: flex;justify-content: space-between;align-items: center;padding: 12px 30px;
     position: absolute; z-index: 10000; position: fixed; width: 100%;
 }
 .menu {flex-grow: 1;text-align: center; position: fixed; right: 50px;}
-.navbar {list-style: none;margin: 0; padding: 0;display: flex;justify-content: flex-end;}
-.menu-item { position: relative; margin-left: 30px; }
+.navbar {list-style: none;margin: 0; padding: 0;display: flex;justify-content: flex-end;gap: 30px;align-items: center;}
+.menu-item { position: relative;}
 .menu-item a {text-decoration: none;color: white; font-size: 20px; font-weight: 900; padding: 10px 15px; display: inline-block;}
 .menu-item a:hover {color: red !important; border-radius: 5px;}
-.sub-menu {list-style: none; margin: 0; padding: 0; position: absolute; top: 100%; left: -25px; 
+.sub-menu {list-style: none; margin: 0; padding: 0; position: absolute; top: 100%; left: 0px; 
     color: black; border-radius: 5px; display: none; }
 .menu-item:hover .sub-menu { display: block;}
-.sub-menu .menu-item a { font-size: 16px; padding: 10px 20px; color: black; white-space: nowrap; text-align: center;}
+.sub-menu .menu-item a { font-size: 16px; padding: 10px 20px; color: white; white-space: nowrap; text-align: left;}
 .sub-menu .menu-item a:hover { color: red !important; }
 .menuBtn img { width: 30px; height: auto; }
 
