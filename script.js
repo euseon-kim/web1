@@ -26,16 +26,37 @@ window.addEventListener('scroll', function() {
 })
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('section').forEach((section,i)=>{
+    ScrollTrigger.create({
+        trigger:section,
+        start:'top top',
+        pin:true,
+        pinSpacing:false,
+        markers:true,
+    })
 
-gsap.utils.toArray('section').forEach((section, index) => {
-  ScrollTrigger.create({
-    trigger:section,
-    start:'top top',
-    pin:true,
-    pinSpacing:false,
-    markers:true,
 })
-  });
+
+
+  
+// gsap.utils.toArray('section').forEach((section, index) => {
+//   ScrollTrigger.create({
+//     trigger: section,
+//     start:'top+=90px top',
+//     end:'+=1308',
+//     pin:'.section-two',
+//     pinSpacing:false,
+//     scrub:true,
+//     markers:true,
+//     scale:1,
+// })
+
+//   })
+// .to('.global-two',{marginTop:'-654px',scale:1,})
+// .to('.global-three',{marginTop:'-654px',scale:1,});
+
+
+  
 
   
 
