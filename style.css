@@ -5,6 +5,9 @@
     font-style: normal;
 }
 
+body {overflow: hidden}
+/* body.overflow-auto {overflow: auto;} */
+html {overflow-x: hidden ;}
 body {margin: 0; padding: 0; background-color: white;  font-family: 'Pretendard-Regular'; box-sizing: border-box;}
 ul, li {list-style-type: none; }
 .container {margin: 5% 5%; padding: 0;}
@@ -62,12 +65,14 @@ ul, li {list-style-type: none; }
 .main-content {
     display: none;
     opacity: 1;
+
     transition: opacity 2s ease;
 }
 
 .show-main-content {
     display: block;
     opacity: 1;
+
 }
 
 .hide-loader {
@@ -79,7 +84,7 @@ ul, li {list-style-type: none; }
 /* header */
 .logo img {width: 58px;height: 58px;margin: 4px 30px; }
 .head {display: flex;justify-content: space-between;align-items: center;padding: 12px 30px;
-    position: absolute; z-index: 10000; position: fixed; width: 100%;
+     z-index: 1000; position: fixed; width: 100%; left: 0; top: 0; height: 94px;
 }
 .menu {flex-grow: 1;text-align: center; position: fixed; right: 50px;}
 .navbar {list-style: none;margin: 0; padding: 0;display: flex;justify-content: flex-end;gap: 30px;align-items: center;}
@@ -95,11 +100,11 @@ ul, li {list-style-type: none; }
 
 /* main-section */
 .main-section {position: relative;}
-.loding {width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
+/* .loding {width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;} */
 /* .logo {width: 50px; height: 50px; margin-left: 30px;} */
 
 
-/*section - two*/
+/*section - two*/ 
 .section-two {width: 100%; height: auto;}
 .section-two-title span {color: black;}
 .section-two-title {color: red; font-size: 57px; margin-bottom: 40px; }
