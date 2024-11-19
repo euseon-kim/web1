@@ -27,26 +27,14 @@ window.addEventListener('scroll', function() {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('.global-one, .global-two, .global-three').forEach((section, index) => {
-    gsap.fromTo(section, 
-      {
-        // y: "top+=1270px",       
-     
-      },
-      {
-        // y: "+=1308",         
-        duration: 1.5,    
-        ease: 'power3.out', 
-        scrollTrigger: {
-          trigger: section,         
-          start: 'top+=1270px',      
-          end: '+=1308',        
-          scrub: true,                
-          pin: true,               
-          pinSpacing: false, 
-
-        }
-      });
+gsap.utils.toArray('section').forEach((section, index) => {
+  ScrollTrigger.create({
+    trigger:section,
+    start:'top top',
+    pin:true,
+    pinSpacing:false,
+    markers:true,
+})
   });
 
   
