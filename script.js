@@ -66,19 +66,22 @@ gsap.timeline({
 .fromTo('.section-three-top .b', {x:'100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0);
 
 gsap.to(".news-wrapper", {
-  x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
+  x: () => -(document.querySelector(".section-five").scrollWidth -
+   document.documentElement.clientWidth) + 'px',
   ease: "none", 
   scrollTrigger: {
     trigger: ".section-five", 
-    start: "10% top", 
-    // end: () => "+=" + (document.querySelector(".section-five").offsetHeight * 0.8),
-    end : '100% 50%',
+    start: "top", 
     scrub: 1,
     pin: true, 
     pinSpacing: false, 
+    invalidateOnRefresh: true,
+    end: () => `+=${document.querySelector(".section-five").offsetWidth}`,
     // markers: true,
   }
 });
+
+
 
 
 
