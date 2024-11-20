@@ -53,6 +53,52 @@ window.addEventListener('scroll', function() {
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.timeline({
+    scrollTrigger:{
+        trigger:'.section-three-top',
+        start:'70% 80%',
+        end:'70% 20%',
+        scrub:2,
+        // markers:true,
+    }
+})
+.fromTo('.section-three-top .a', {x:'-100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0)
+.fromTo('.section-three-top .b', {x:'100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0);
+
+gsap.to(".news-wrapper", {
+  x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
+  ease: "none", 
+  scrollTrigger: {
+    trigger: ".section-five", 
+    start: "10% top", 
+    // end: () => "+=" + (document.querySelector(".section-five").offsetHeight * 0.8),
+    end : '100% 50%',
+    scrub: 1,
+    pin: true, 
+    pinSpacing: false, 
+    // markers: true,
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // gsap.utils.toArray('section').forEach((section,i)=>{
 //     ScrollTrigger.create({
 //         trigger:section,
@@ -82,47 +128,6 @@ gsap.registerPlugin(ScrollTrigger);
 //     // .to('.global-one', { marginTop: '-654px', scale: 1, })
 //     .to('.global-two', { marginTop: '-654px', scale: 1, })
 //     .to('.global-three', { marginTop: '-654px', scale: 1, });
-
-
-gsap.timeline({
-    scrollTrigger:{
-        trigger:'.section-three-top',
-        start:'70% 80%',
-        end:'70% 20%',
-        scrub:2,
-        // markers:true,
-    }
-})
-.fromTo('.section-three-top .a', {x:'-100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0)
-.fromTo('.section-three-top .b', {x:'100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0);
-
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".news-wrapper", {
-  x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
-  ease: "none", 
-  scrollTrigger: {
-    trigger: ".section-five", 
-    start: "10% top", 
-    // end: () => "+=" + (document.querySelector(".section-five").offsetHeight * 0.8),
-    end : '100% 50%',
-    scrub: 1,
-    pin: true, 
-    pinSpacing: false, 
-    // markers: true,
-  }
-});
-
-
-
-
-
-
-
-
-
-
 
 
 
