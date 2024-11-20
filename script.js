@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   
+    gsap.registerPlugin(ScrollTrigger);
+
     const loader = document.getElementById('loader');
     const mainContent = document.getElementById('main-content');
 
@@ -10,25 +12,42 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.classList.add('hide-loader');
         mainContent.classList.add('show-main-content');
 
-        gsap.fromTo(mainContent, {
-            y: '100%', 
+        const tl = gsap.timeline();
+        
+        gsap.set(mainContent, {
+            y: '100%',
             opacity: 0,
-            scale:0.6
-        },{
-            y: '0%', 
+            scale: 0.6
+        });
+        
+        tl.to(mainContent, {
+            y: '60%',
             opacity: 1,
-            duration: 2, 
-            scale:1,
-            ease: 'power3' ,
+            duration: 1,
+            ease: 'power2.out'
+        })
+        .to(mainContent, {
+            y: '60%',
+            duration: 0.5,
             onStart: () => {
                 mainContent.style.transformOrigin = 'center center';
-            },
+            }
+        })
+        .to(mainContent, {
+            y: '0%',
+            scale: 1,
+            duration: 1,
+            ease: 'power3.inOut',
             onComplete: () => {
                 document.body.style.overflow = 'auto';
                 document.documentElement.style.overflow = 'auto';
             }
-        });         
+        });
     }, 4500);
+
+
+
+    
 });
 
 
@@ -51,7 +70,9 @@ window.addEventListener('scroll', function() {
 })
 
 
-gsap.registerPlugin(ScrollTrigger);
+
+// GSAP ERROR 검색 -> 영어 / 한글로는 GPT
+// // https://michalsnik.github.io/aos/
 
 gsap.timeline({
     scrollTrigger:{
