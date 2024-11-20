@@ -59,6 +59,7 @@ gsap.timeline({
         start:'70% 80%',
         end:'70% 20%',
         scrub:2,
+        invalidateOnRefresh: true,
         // markers:true,
     }
 })
