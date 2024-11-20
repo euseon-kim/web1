@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const loader = document.getElementById('loader');
     const mainContent = document.getElementById('main-content');
 
-    // document.body.style.overflow = 'hidden';
-    // document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
 
     setTimeout(function () {
         loader.classList.add('hide-loader');
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 mainContent.style.transformOrigin = 'center center';
             },
             onComplete: () => {
-                // document.body.style.overflow = 'auto';
-                // document.documentElement.style.overflow = 'auto';
+                document.body.style.overflow = 'auto';
+                document.documentElement.style.overflow = 'auto';
             }
         });         
     }, 4500);
@@ -52,7 +52,54 @@ window.addEventListener('scroll', function() {
 
 
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.timeline({
+    scrollTrigger:{
+        trigger:'.section-three-top',
+        start:'220% 80%',
+        end:'220% 20%',
+        scrub:2,
+        // markers:true,
+    }
+})
+.fromTo('.section-three-top .a', {x:'-100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0)
+.fromTo('.section-three-top .b', {x:'100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0);
+
+// gsap.timeline({
+//     scrollTrigger:{
+//         trigger:'.section-two',
+//         start:'120% 80%',
+//         end:'120% 20%',
+//         scrub:2,
+//         markers:true,
+//     }
+// })
+// .fromTo('.global-one', {y:'100%', }, {y:'0%', ease:'power3', duration:10},0)
+// .fromTo('.global-two', {y:'100%', }, {y:'0%', ease:'power3', duration:10},0)
+// .fromTo('.global-three', {y:'100%', }, {y:'0%', ease:'power3', duration:10},0);
+
+  
+// gsap.utils.toArray('.section-two').forEach((section, index) => {
+//     ScrollTrigger.create({
+//         trigger: section,
+//         start: '60% 80%',
+//         end: '60% 20%',
+//         pin: true,
+//         pinSpacing: false,
+//         scrub: true,
+//         markers: true,
+//         scale: 1,
+//     })
+
+// })
+//     // .to('.global-one', { marginTop: '-654px', scale: 1, })
+//     .to('.global-two', { marginTop: '-654px', scale: 1, })
+//     .to('.global-three', { marginTop: '-654px', scale: 1, });
+
+
+
+
 // gsap.utils.toArray('section').forEach((section,i)=>{
 //     ScrollTrigger.create({
 //         trigger:section,
@@ -63,24 +110,6 @@ window.addEventListener('scroll', function() {
 //     })
 
 // })
-
-
-  
-// gsap.utils.toArray('section').forEach((section, index) => {
-//   ScrollTrigger.create({
-//     trigger: section,
-//     start:'top+=90px top',
-//     end:'+=1308',
-//     pin:'.section-two',
-//     pinSpacing:false,
-//     scrub:true,
-//     markers:true,
-//     scale:1,
-// })
-
-//   })
-// .to('.global-two',{marginTop:'-654px',scale:1,})
-// .to('.global-three',{marginTop:'-654px',scale:1,});
 
 
   
