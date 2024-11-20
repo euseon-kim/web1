@@ -51,20 +51,81 @@ window.addEventListener('scroll', function() {
 })
 
 
-
 gsap.registerPlugin(ScrollTrigger);
+
+// gsap.utils.toArray('section').forEach((section,i)=>{
+//     ScrollTrigger.create({
+//         trigger:section,
+//         start:'bottom bottom',
+//         end: '30% 30%',
+//         pinSpacing:false,
+//         markers:true,
+//     })
+    
+// })
+// .to('.global-two', { marginTop: '-654px', scale: 1, })
+// .to('.global-three', { marginTop: '-654px', scale: 1, });
+
+// gsap.utils.toArray('.section-two').forEach((section, index) => {
+//     ScrollTrigger.create({
+//         trigger: section,
+//         start: '60% 80%',
+//         end: '60% 20%',
+//         pin: true,
+//         pinSpacing: false,
+//         scrub: true,
+//         markers: true,
+//         scale: 1,
+//     })
+
+// })
+//     // .to('.global-one', { marginTop: '-654px', scale: 1, })
+//     .to('.global-two', { marginTop: '-654px', scale: 1, })
+//     .to('.global-three', { marginTop: '-654px', scale: 1, });
+
 
 gsap.timeline({
     scrollTrigger:{
         trigger:'.section-three-top',
-        start:'220% 80%',
-        end:'220% 20%',
+        start:'70% 80%',
+        end:'70% 20%',
         scrub:2,
         // markers:true,
     }
 })
 .fromTo('.section-three-top .a', {x:'-100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0)
 .fromTo('.section-three-top .b', {x:'100%', opacity:0}, {x:'0%', ease:'power3',opacity:1, duration:10},0);
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// gsap.to(".news-wrapper", {
+//   x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
+//   ease: "none", 
+//   scrollTrigger: {
+//     trigger: ".section-five", 
+//     start: "20% 60%", 
+//     end: () => "+=" + (document.querySelector(".section-five").offsetHeight),
+//     scrub: 1, 
+//     pin: true, 
+//     pinSpacing: true, 
+//     markers: true,
+//     onComplete: () => {
+//         // 스크롤이 끝나면 .news-wrapper의 x 위치를 유지하도록 설정
+//         gsap.set(".news-wrapper", { x:(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth) });
+//       }
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
 
 // gsap.timeline({
 //     scrollTrigger:{
