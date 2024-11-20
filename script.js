@@ -99,23 +99,22 @@ gsap.timeline({
 
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.to(".news-wrapper", {
-//   x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
-//   ease: "none", 
-//   scrollTrigger: {
-//     trigger: ".section-five", 
-//     start: "20% 60%", 
-//     end: () => "+=" + (document.querySelector(".section-five").offsetHeight),
-//     scrub: 1, 
-//     pin: true, 
-//     pinSpacing: true, 
-//     markers: true,
-//     onComplete: () => {
-//         // 스크롤이 끝나면 .news-wrapper의 x 위치를 유지하도록 설정
-//         gsap.set(".news-wrapper", { x:(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth) });
-//       }
-//   }
-// });
+gsap.to(".news-wrapper", {
+  x: () => -(document.querySelector(".news-wrapper").scrollWidth - window.innerWidth),
+  ease: "none", 
+  scrollTrigger: {
+    trigger: ".section-five", 
+    start: "10% top", 
+    // end: () => "+=" + (document.querySelector(".section-five").offsetHeight * 0.8),
+    end : '100% 50%',
+    scrub: 1,
+    pin: true, 
+    pinSpacing: false, 
+    // markers: true,
+  }
+});
+
+
 
 
 
