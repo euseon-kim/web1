@@ -125,7 +125,7 @@ ul, li {list-style-type: none; }
 }
 
 /*section - two*/ 
-.section-two {width: 100%; height: 300vh; position: relative;}
+.section-two {width: 100%; height: 200vh; position: relative;}
 .section-two-title span {color: black;}
 .section-two-title {color: red; font-size: 57px; margin-bottom: 40px; }
 .global-one, .global-two, .global-three {
