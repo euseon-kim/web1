@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -16,76 +19,77 @@
             <h1>자연과 함께 맛으로 행복한 세상</h1>
         </div>
     </div>
+    <header class="head" id="mainHeader">
+        <div class="logo">
+            <a href="#"><img src="image/logo_wh.svg" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul class="navbar">
+                <li class="menu-item">
+                    <a href="#">회사소개</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">오뚜기소개</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">오시는길</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">인재채용</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">제품이야기</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">브랜드스토리</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">제품소개</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">브랜드경험</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">공식캐릭터</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">공모전</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">이벤트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">홍보센터</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">고객서비스</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">고객의소리</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">고객상담</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
     <div class="main-content" id="main-content">
-        <header class="head" id="mainHeader">
-            <div class="logo">
-                <a href="#"><img src="image/logo_wh.svg" alt=""></a>
-            </div>
-            <div class="menu">
-                <ul class="navbar">
-                    <li class="menu-item">
-                        <a href="#">회사소개</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="#">오뚜기소개</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">오시는길</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">인재채용</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">제품이야기</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="#">브랜드스토리</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">제품소개</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">브랜드경험</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="#">공식캐릭터</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">공모전</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">이벤트</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">홍보센터</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="#">공지사항</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">고객서비스</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="#">고객의소리</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">고객상담</a>
-                            </li>
-                        </ul>
-                    </li>
 
-                </ul>
-
-            </div>
-        </header>
         <div class="main-section">
             <div class="video-container">
                 <video width="100%" height="100%" src="image/videoplayback.mp4" autoplay loop muted playsinline>
@@ -97,16 +101,17 @@
     </div>
 
     <div class="container">
+        <h2 class="section-two-title"><span> Global</span> OTTOGI</h2>
         <div class="section-two">
-            <h2 class="section-two-title"><span> Global</span> OTTOGI</h2>
-
-            <div class="global-one">
-                <h3>중국 강소 부도옹식품유한공사</h3>
-                <p>1994년 6월 설립, 중국 강소성 소재,
-                    농산물 건조, 농축, 냉동가공 부도옹식품유한공사는 중국 강소성에 위치하고 있는 농산물 건조, 농축 및 냉동가공을 주로 하는 중국 현지법인으로 우리회사의 첫 번째
-                    해외투자 사업입니다.</p>
-            </div>
-
+            
+            <section>
+                <div class="global-one">
+                    <h3>중국 강소 부도옹식품유한공사</h3>
+                    <p>1994년 6월 설립, 중국 강소성 소재,
+                        농산물 건조, 농축, 냉동가공 부도옹식품유한공사는 중국 강소성에 위치하고 있는 농산물 건조, 농축 및 냉동가공을 주로 하는 중국 현지법인으로 우리회사의 첫 번째
+                        해외투자 사업입니다.</p>
+                </div>
+            </section>
             <section>
                 <div class="global-two">
                     <h3>오뚜기 아메리카</h3>
@@ -125,9 +130,9 @@
         <div class="section-three">
             <div class="inner">
                 <div class="section-three-top">
-                    <p class="a"><span>인류 식생활</span>을</p>
+                    <p class="a" data-aos="fade-right"><span>인류 식생활</span>을</p>
                     <p>향상시키는</p>
-                    <p class="b"><span>글로벌</span> 식품 기업</p>
+                    <p class="b" data-aos="fade-left"><span>글로벌</span> 식품 기업</p>
                 </div>
                 <p class="section-three-bottom">보다 높은 영양을 위해1969년부터 한결같이 식품이 사람들의<br> 심신 건강을 지키는 영양분이 될 수 있도록
                     과거부터 현재까지<br> 이어온 그리고 앞으로도 계속 이어갈 오뚜기의 마음입니다.</p>
@@ -163,73 +168,76 @@
                 <h2><img src="image/logo_wh.svg" alt=""> NEWS ! </h2>
             </div>
             <div class="news-wrapper">
-                <div class="news-content cont1">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 주부패널 대상</a><br>
-                            <a href="#">2024 쿠킹클래스 진행</a>
-                        </h2>
+                <div class="horizontal">
+                    <div class="news-content cont1">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 주부패널 대상</a><br>
+                                <a href="#">2024 쿠킹클래스 진행</a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/new1.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="news-img">
-                        <img src="image/new1.jpg" alt="">
+
+                    <div class="news-content cont2">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 바쁜 현대인 위한</a><br>
+                                <a href="#"> '냉동 주먹밥' 3종 출시</a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/news2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="news-content cont3">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 가수 싸이와</a><br>
+                                <a href="#"> '지역식 국물요리' 첫 TV CF</a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/news3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="news-content cont4">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 하루 한 컵 간편하게</a><br>
+                                <a href="#"> 즐기는 '컵 샐러드' 2종 출시</a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/news4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="news-content cont5">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 넷플릭스 </a><br>
+                                <a href="#"> 오징어게임 시즌2와 협업 </a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/news5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="news-content cont6">
+                        <div class="news-title">
+                            <h2>
+                                <a href="#">(주)오뚜기, 향긋 상큼한 </a><br>
+                                <a href="#"> 페어링 와삿비 2종 출시 </a>
+                            </h2>
+                        </div>
+                        <div class="news-img">
+                            <img src="image/new6.jpg" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <div class="news-content cont2">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 바쁜 현대인 위한</a><br>
-                            <a href="#"> '냉동 주먹밥' 3종 출시</a>
-                        </h2>
-                    </div>
-                    <div class="news-img">
-                        <img src="image/news2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="news-content cont3">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 가수 싸이와</a><br>
-                            <a href="#"> '지역식 국물요리' 첫 TV CF</a>
-                        </h2>
-                    </div>
-                    <div class="news-img">
-                        <img src="image/news3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="news-content cont4">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 하루 한 컵 간편하게</a><br>
-                            <a href="#"> 즐기는 '컵 샐러드' 2종 출시</a>
-                        </h2>
-                    </div>
-                    <div class="news-img">
-                        <img src="image/news4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="news-content cont5">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 넷플릭스 </a><br>
-                            <a href="#"> 오징어게임 시즌2와 협업 </a>
-                        </h2>
-                    </div>
-                    <div class="news-img">
-                        <img src="image/news5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="news-content cont6">
-                    <div class="news-title">
-                        <h2>
-                            <a href="#">(주)오뚜기, 향긋 상큼한 </a><br>
-                            <a href="#"> 페어링 와삿비 2종 출시 </a>
-                        </h2>
-                    </div>
-                    <div class="news-img">
-                        <img src="image/new6.jpg" alt="">
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -266,13 +274,14 @@
                 </ul>
             </div>
         </div>
-
         <!-- 
          GSAP 라이브러리 로드  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
         <!-- ScrollTrigger 플러그인 로드  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
         <script src="script.js"></script>
+
 </body>
 
 </html>
