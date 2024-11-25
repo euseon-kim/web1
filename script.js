@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let globalThree = document.querySelector('.global-three');
     
 
-    let sectionHeight = window.innerHeight; 
+    let sectionHeight = window.innerHeight-50; 
     
     function onScroll() {
       let scrollY = window.scrollY; 
@@ -103,13 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
       let sectionThreeProgress = (scrollY - 2 * sectionHeight) / sectionHeight; 
     
       if (scrollY >= sectionHeight && scrollY < 2 * sectionHeight) {
-        globalTwo.style.transform = `translateY(-${Math.min(sectionTwoProgress * 110, 100)}%)`; 
-        globalOne.style.transform = `translateY(${Math.min(sectionTwoProgress * 110, 100)}%)`;
+        globalTwo.style.transform = `translateY(-${Math.min(sectionTwoProgress * 100, 100)}%)`; 
+        globalOne.style.transform = `translateY(${Math.min(sectionTwoProgress * 100, 100)}%)`;
       }
 
       if (scrollY >= 2 * sectionHeight) {
-        globalThree.style.transform = `translateY(-${Math.min(sectionThreeProgress * 110, 100)}%)`; 
-        globalTwo.style.transform = `translateY(${Math.min(sectionThreeProgress * 110, 100)}%)`;
+        globalThree.style.transform = `translateY(-${Math.min(sectionThreeProgress * 100, 100)}%)`; 
+        globalTwo.style.transform = `translateY(${Math.min(sectionThreeProgress * 100, 100)}%)`;
       }
     }
     
