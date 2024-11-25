@@ -103,12 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
       let sectionThreeProgress = (scrollY - 2 * sectionHeight) / sectionHeight; 
     
       if (scrollY >= sectionHeight && scrollY < 2 * sectionHeight) {
-        globalTwo.style.transform = `translateY(${Math.min(sectionTwoProgress * 100, 100)}%)`; 
+        globalTwo.style.transform = `translateY(-${Math.min(sectionTwoProgress * 100, 100)}%)`; 
         globalOne.style.transform = `translateY(${Math.min(sectionTwoProgress * 100, 100)}%)`;
       }
 
       if (scrollY >= 2 * sectionHeight) {
-        globalThree.style.transform = `translateY(${Math.min(sectionThreeProgress * 100, 100)}%)`; 
+        globalThree.style.transform = `translateY(-${Math.min(sectionThreeProgress * 100, 100)}%)`; 
         globalTwo.style.transform = `translateY(${Math.min(sectionThreeProgress * 100, 100)}%)`;
       }
     }
