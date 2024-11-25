@@ -211,7 +211,7 @@ ul, li {list-style-type: none; }
 /*section-five*/
 .section-five { height: 80vh; padding: 5% 0; overflow: visible;
  }
-.news-head {font-size: 40px;}
+.news-head {font-size: 40px; position: sticky;}
 .news-head h2 img {width: 7vh; height: 7vh;}
 .news-content {
     width: 50vh; height: 40vh; border-radius: 20px; 

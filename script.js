@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
         tl.to(mainContent, {
             y: '60%',
             opacity: 1,
-            duration: 1,
+            duration: 0.2,
             ease: 'power2.out'
         })
         .to(mainContent, {
             y: '60%',
-            duration: 0.5,
+            duration: 0,
             onStart: () => {
                 mainContent.style.transformOrigin = 'center center';
             }
@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
        
     }, 4500);  
+
+ 
 
     window.addEventListener('scroll', function() {
         const header = document.querySelector(".head");
@@ -112,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     
+
 
     
     document.addEventListener('scroll', horizontalScroll);
