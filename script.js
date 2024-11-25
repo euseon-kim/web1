@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       window.addEventListener('resize', function () {
         AOS.refresh();
-        window.scrollTo(0, scrollPos);
+        window.scrollTo(0, 0);
     });
    
   
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tl.to(mainContent, {
             y: '60%',
             opacity: 1,
-            duration: 0.2,
+            duration: 0.4,
             ease: 'power2.out'
         })
         .to(mainContent, {
@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 4500);  
 
  
-
     window.addEventListener('scroll', function() {
         const header = document.querySelector(".head");
         const menuItem = document.querySelectorAll(".menu a");
@@ -114,8 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     
-
-
     
     document.addEventListener('scroll', horizontalScroll);
 
