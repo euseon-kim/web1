@@ -125,7 +125,7 @@ ul, li {list-style-type: none; }
 }
 
 /*section - two*/ 
-.section-two {width: 100%; height: 200vh; position: relative;}
+.section-two {width: 100%; height: 210vh; position: relative;}
 .section-two-title span {color: black;}
 .section-two-title {color: red; font-size: 57px; margin-bottom: 40px; }
 .global-one, .global-two, .global-three {
@@ -135,7 +135,7 @@ ul, li {list-style-type: none; }
     font-size: 100%;
     width: 100%;
     height: 65.4vh;
-    /* margin-bottom: -50px; */
+    margin-bottom: -50px;
 }
 .global-one {background: url(image/overseas_visual.jpg); position: relative; z-index: 1;}
 .global-two{background-image: url(image/overseas_visual.jpg) ; position: relative;  z-index: 20;}
@@ -224,7 +224,7 @@ ul, li {list-style-type: none; }
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.horizontal {display: flex; }
+.horizontal {display: flex; height: 50vh;}
 .cont1{background-color: #FFDECC; }
 .cont2{background-color: #E6E9BF;}
 .cont3{background-color: #F8E6C3;}
