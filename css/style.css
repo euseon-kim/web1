@@ -144,9 +144,9 @@ ul, li {list-style-type: none; }
     height: 65.4vh;
     margin-bottom: -50px;
 }
-.global-one {background: url(image/overseas_visual.jpg); position: relative; z-index: 1;}
-.global-two{background-image: url(image/overseas_visual.jpg) ; position: relative;  z-index: 20;}
-.global-three{background-image: url(image/overseas_visual.jpg) ; position: relative; z-index: 300;}
+.global-one {background: url(../image/overseas_visual.jpg); position: relative; z-index: 1;}
+.global-two{background-image: url(../image/overseas_visual.jpg) ; position: relative;  z-index: 20;}
+.global-three{background-image: url(../image/overseas_visual.jpg) ; position: relative; z-index: 300;}
 .section-two h3 {font-size: 45px; font-weight: 700; padding: 80px 100px; margin-bottom: 10px;}
 .section-two p {font-weight: 300; line-height: 1.6; padding: 0px 100px;; font-size: 16px;}
 
@@ -194,7 +194,7 @@ ul, li {list-style-type: none; }
 
 /*section-four*/
 .section-four {width: 100%; height: 100vh; position: relative; overflow: hidden;}
-.four-inner{background-image: url(image/fresh.jpg) ; width: 100%; height: 75%;
+.four-inner{background-image: url(../image/fresh.jpg) ; width: 100%; height: 75%;
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -261,9 +261,10 @@ ul, li {list-style-type: none; }
 .footer-right img{margin-top: 20px;}
 
 
+.pc {display:block}
+.m {display:none;}
 
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     /* header */
     .menu, .navbar {display: none;}
     .logo img {width: 40px;height: 40px;margin: 0px; }
@@ -306,7 +307,36 @@ ul, li {list-style-type: none; }
     .footer-left, .footer-right {padding: 10px;}
     .footer-right{text-align: left; position: absolute; font-size: 15px; line-height: 25px; top: 120px; left: -15px;}
     .footer-right img{position: absolute; top: 150px; right: -110px;}
+
+
+
+    /* 수정 */
+    .pc {display:none;}
+    .m {display:block;}
+    .loading-text p {font-size: 2rem;}
+    .loading-text p:nth-child(2) {margin-bottom: 20px;}
+    .loading-text h1 {font-size:3rem;}
+
+    .section-three-top p {font-size: 10vw;line-height: 1.3;}
+    .section-three-bottom {margin-top: 40px;}
+
+    .footer-right {position: static;left:0;}
+
+    .four-inner-i {width:100%;position:relative;z-index: 10;}
+    .four-inner h2 {font-size: 2.5rem;margin-bottom: 20px;}
+    .four-inner p {font-size:1.2rem}
+
+    .four-inner-i div {width: 240px;height: 60px;line-height: 60px;margin-top: 40px;}
+    .four-inner a {font-size: 1.3rem;}
+
+    .section-five {height: 50vh;}
+    .footer {margin-bottom: 60px;}
+    .footer-btn {top:30px;}
+    .footer-right ul li:last-child {display:none;}
 }
+
+/* 태블릿 1024 */
+/* 작은PC 1200 */
 
 @media (min-width: 501px) and (max-width: 768px) {
 
@@ -342,6 +372,8 @@ ul, li {list-style-type: none; }
     .footer-btn {margin-top: 70px;}
     .footer-right{text-align: left; margin-left: -80px; margin-top: 100px; font-size: 18px; line-height: 30px;}
     .footer-right img{margin-top: 10px;}
+
+        
 }
 
 @media (min-width: 769px) and (max-width:1024px) {
@@ -362,4 +394,6 @@ ul, li {list-style-type: none; }
 
     /*section-four*/
     .four-inner h2 {font-size: 40px;}
+
+    
 }

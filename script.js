@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 1,
             ease: 'power3.inOut',
             onComplete: () => {
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'hidden';
                 document.documentElement.style.overflow = 'auto';
             }
         });

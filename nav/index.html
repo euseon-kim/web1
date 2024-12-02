@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        nav쪽 html이랑 css 조금 수정해드렸습니다.
+        나머지 메뉴들 작성해주세요~
+    -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="/">KRAFTON</a>
+            </div>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">크래프톤 이야기</a></li>
+                            <li><a href="#">남겨온 흔적</a></li>
+                            <li><a href="#">도전의 역사</a></li>
+                            <li><a href="#">브랜드 리소스 센터</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Studios</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Studios 메인</a></li>
+                            <li><a href="#">펍지 스튜디오</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="container" class="main">
+        <div class="wrap">
+            <video id="mainvideo" poster autoplay loop muted playsinline>
+                <source src="https://www.krafton.com/wp-content/uploads/2021/06/video-005.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="contentInner">
+        <div id="studios">
+            <div class="txt">
+                <h2 class="txtTitle" data-hidden="true">
+                    <span style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Studios</span>
+                </h2>
+                <ul class="imgBetween">
+                    <li class="StudioItem">
+                        <a href="index.html" class="__animated" data-amount="20" title="PUBG">
+                            <div class="box">
+                                <b class="titsub __animated" data-hidden="true" data-delay=".15"><span>PUBG</span><br/>
+                                    <!-- <p>PUBG를 가장 강력한 문화 IP로<br/> 성장시키겠습니다.</p> -->
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="StudioItem">
+                        <a href="index.html" class="__animated" data-delay=".3" data-amount="20" title="Bluehole Studio">
+                            <div class="box">
+                                <b class="titsub __animated" data-hidden="true" data-delay=".45"><span>Bluehole Studio</span><br/>
+                                    <!-- <p>MMORPG 장르를 대표하는 게임<br/> 제작사가 되겠습니다.</p> -->
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li class="StudioItem">
+                        <a href="index.html" class="__animated" data-delay=".6" data-amount="20" title="RisingWings">
+                            <div class="box">
+                                <b class="titsub __animated" data-hidden="true" data-delay=".75"><span>RisingWings</span><br/>
+                                    <p>글로벌 시장에서 인정받는 모바일<br/> 캐주얼게임 명가가 되겠습니다.</p>
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="StudioItem">
+                        <a href="index.html" class="__animated" data-delay=".9" data-amount="20" title="PUBG">
+                            <div class="box">
+                                <b class="titsub __animated" data-hidden="true" data-delay="1.05"><span>Striking Distance <br/> Studios</span><br/>
+                                    <p>퀄리티와 우수성에 대한 열정을 기반으로<br/> 몰입감 넘치는 경험을 만들어냅니다.</p>
+                                </b>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="News">
+            <div class="txt">
+                <h2 class="txtTitle" data-hidden="true">
+                    <span style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">News</span>
+                </h2>
+                <ul class="imgBetween">
+                    <li class="NewsWrap">
+                        <a href="index.html" class="frame" data-amount="20" title="PUBG">
+                            <div class="boxContainer">
+                                <h2>실시간 뉴스</h2>
+                                <div id="boxWrap">
+                                    <dl class="mainnews">
+                                        <dt class="newsinfo">현재뉴스</dt>
+                                        <dd>뉴스<span>입니다</span></dd>
+                                    </dl>
+                                    <dl class="mainTime">
+                                        <dt>현재시간</dt>
+                                        <dd>00시00분</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="newsitem">
+                        <a href="index.html" class="__animated" data-delay=".3" data-amount="20" title="Bluehole Studio">
+                            <div class="box">
+                                <b class="titsub2"><span>News2</span><br/>
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="newsitem">
+                        <a href="index.html" class="__animated" data-delay=".6" data-amount="20" title="RisingWings">
+                            <div class="box">
+                                <b class="titsub2"><span>News3</span><br/>
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="newsitem">
+                        <a href="index.html" class="__animated" data-delay=".9" data-amount="20" title="RisingWings">
+                            <div class="box">
+                                <b class="titsub2"><span>News4</span><br/>
+                                </b>
+                            </div>
+                        </a>
+                    </li>
+            </div>
+        </div>
+
+        <div id="Carrer">
+            <div class="txt">
+                <h2 class="txtTitle" data-hidden="true">
+                    <span style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Carrer</span>
+                </h2>
+            </div>
+        </div>
+        
+        <div id="KRAFTONGAMES">
+            <div class="txt">
+                <h2 class="txtTitle" data-hidden="true">
+                    <span style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">KRAFTON GAMES</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
