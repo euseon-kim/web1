@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
        
     }, 4500);  
 
- 
     window.addEventListener('scroll', function() {
         const header = document.querySelector(".head");
         const menuItem = document.querySelectorAll(".menu a");
@@ -136,18 +135,17 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     function initSectionTwoAnimation() {
-    
-        // gsap.utils.toArray('section').forEach((section, i) => {
-        //     ScrollTrigger.create({
-        //         trigger: section,
-        //         start: 'top top',
-        //         end : '80% top',
-        //         pin: true,
-        //         pinSpacing: false,
-        //         markers: true,
-        //     })
+        gsap.utils.toArray('section').forEach((section, i) => {
+            ScrollTrigger.create({
+                trigger: section,
+                start: 'top top',
+                end : '90% top',
+                pin: true,
+                pinSpacing: false,
+                markers: true,
+            })
 
-        // })
+        })
     }
     
     
