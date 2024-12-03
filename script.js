@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 end : '90% top',
                 pin: true,
                 pinSpacing: false,
-                markers: true,
+                // markers: true,
             })
 
         })
