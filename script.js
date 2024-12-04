@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.utils.toArray('section').forEach((section, i) => {
             ScrollTrigger.create({
                 trigger: section,
-                start: 'top top',
+                start: 'top 20%',
                 end : '90% top',
                 pin: true,
                 pinSpacing: false,

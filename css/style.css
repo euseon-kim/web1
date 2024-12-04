@@ -44,6 +44,7 @@ ul, li {list-style-type: none; }
     white-space: nowrap;
     border-right: 0.1em solid black;
     padding-right: 0.1em;
+    text-align: center;
     animation: typing 4s steps(40) forwards, blink 0.75s step-end infinite;
 }
 
@@ -402,10 +403,11 @@ ul, li {list-style-type: none; }
 
 
     .m p {
+        text-align: left;
         animation: typing 4s steps(40) 1 normal forwards;
     }
     .m h1 {
-        text-align: center;
+        text-align: left;
         animation: typing 4s steps(40) 1 normal forwards,
     }
     @keyframes blink {
