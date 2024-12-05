@@ -89,6 +89,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
+   function initSectionTwoAnimation() {
+    gsap.timeline({
+        scrollTrigger : {
+            trigger:".global-one",
+            start : "top 20%",
+            end: "bottom 20%",
+            pin:".section-two",
+            scrub: true,
+            // markers:true,  
+        }
+    })
+    .fromTo ( ".global-two",{scale:1.4}, {y:"-65.4vh", scale:1, duration:10} )
+    .fromTo ( ".global-three",{scale:1.4}, {y:"-130.8vh", scale:1, duration:20} )
+   }
     function initSectionThreeAnimation() {
 
         gsap.timeline({
@@ -104,71 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .fromTo('.section-three-top .a', { x: '-100%', opacity: 0 }, { x: '0%', ease: 'power3', opacity: 1, duration: 10 }, 0)
             .fromTo('.section-three-top .b', { x: '100%', opacity: 0 }, { x: '0%', ease: 'power3', opacity: 1, duration: 10 }, 0);
     }
-
-
-
-    // document.addEventListener('scroll', onScroll);
-
-    // let globalOne = document.querySelector('.global-one');
-    // let globalTwo = document.querySelector('.global-two');
-    // let globalThree = document.querySelector('.global-three');
-    
-
-    // let sectionHeight = window.innerHeight-50; 
-    
-    // function onScroll() {
-    //   let scrollY = window.scrollY; 
-    
-    //   let sectionTwoProgress = (scrollY - sectionHeight) / sectionHeight; 
-    //   let sectionThreeProgress = (scrollY - 2 * sectionHeight) / sectionHeight; 
-    
-    //   if (scrollY >= sectionHeight && scrollY < 2 * sectionHeight) {
-    //     globalTwo.style.transform = `translateY(-${Math.min(sectionTwoProgress * 100, 100)}%)`; 
-    //     globalOne.style.transform = `translateY(${Math.min(sectionTwoProgress * 100, 100)}%)`;
-    //   }
-
-    //   if (scrollY >= 2 * sectionHeight) {
-    //     globalThree.style.transform = `translateY(-${Math.min(sectionThreeProgress * 100, 100)}%)`; 
-    //     globalTwo.style.transform = `translateY(${Math.min(sectionThreeProgress * 100, 100)}%)`;
-    //   }
-    // }
-    
-
-    function initSectionTwoAnimation() {
-        gsap.utils.toArray('section').forEach((section, i) => {
-            ScrollTrigger.create({
-                trigger: section,
-                start: 'top 20%',
-                end : '90% top',
-                pin: true,
-                pinSpacing: false,
-                // markers: true,
-            })
-
-        })
-    }
     
     
-    // document.addEventListener('scroll', horizontalScroll);
-
-    // let newsWrapper = document.querySelector('.news-wrapper');
-    // let sectionFive = document.querySelector('.section-five');
-    // let newsContents = document.querySelectorAll('.news-content');
-
-    // let scrollWidth = newsWrapper.scrollWidth;
-    // let verticalScrollHeight = sectionFive.getBoundingClientRect().height - newsWrapper.getBoundingClientRect().height;
-
-    // function horizontalScroll() {
-
-    //     let stickyPosition = newsWrapper.getBoundingClientRect().top;
-    //     if (stickyPosition > 1) {
-    //         return;
-    //     } else {
-    //         let scrolled = sectionFive.getBoundingClientRect().top; 
-    //         newsWrapper.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled )* 0.3;
- 
-    //     }
-    // }
     function initSectionFiveAnimation() {
         gsap.to(".news-wrapper", {
             scrollTrigger: {
@@ -197,3 +148,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+    // document.addEventListener('scroll', onScroll);
+
+    // let globalOne = document.querySelector('.global-one');
+    // let globalTwo = document.querySelector('.global-two');
+    // let globalThree = document.querySelector('.global-three');
+    
+
+    // let sectionHeight = window.innerHeight-50; 
+    
+    // function onScroll() {
+    //   let scrollY = window.scrollY; 
+    
+    //   let sectionTwoProgress = (scrollY - sectionHeight) / sectionHeight; 
+    //   let sectionThreeProgress = (scrollY - 2 * sectionHeight) / sectionHeight; 
+    
+    //   if (scrollY >= sectionHeight && scrollY < 2 * sectionHeight) {
+    //     globalTwo.style.transform = `translateY(-${Math.min(sectionTwoProgress * 100, 100)}%)`; 
+    //     globalOne.style.transform = `translateY(${Math.min(sectionTwoProgress * 100, 100)}%)`;
+    //   }
+
+    //   if (scrollY >= 2 * sectionHeight) {
+    //     globalThree.style.transform = `translateY(-${Math.min(sectionThreeProgress * 100, 100)}%)`; 
+    //     globalTwo.style.transform = `translateY(${Math.min(sectionThreeProgress * 100, 100)}%)`;
+    //   }
+    // }
+
+       // document.addEventListener('scroll', horizontalScroll);
+
+    // let newsWrapper = document.querySelector('.news-wrapper');
+    // let sectionFive = document.querySelector('.section-five');
+    // let newsContents = document.querySelectorAll('.news-content');
+
+    // let scrollWidth = newsWrapper.scrollWidth;
+    // let verticalScrollHeight = sectionFive.getBoundingClientRect().height - newsWrapper.getBoundingClientRect().height;
+
+    // function horizontalScroll() {
+
+    //     let stickyPosition = newsWrapper.getBoundingClientRect().top;
+    //     if (stickyPosition > 1) {
+    //         return;
+    //     } else {
+    //         let scrolled = sectionFive.getBoundingClientRect().top; 
+    //         newsWrapper.scrollLeft = (scrollWidth / verticalScrollHeight) * (-scrolled )* 0.3;
+ 
+    //     }
+    // }
