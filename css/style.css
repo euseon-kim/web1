@@ -244,7 +244,7 @@ ul, li {list-style-type: none; }
 }
 
 /*section-four*/
-.section-four {width: 90%; height: 100vh; position: relative; overflow: hidden;margin: 0 auto;}
+.section-four {width: 75%; height: 100vh; position: relative; overflow: hidden;margin: 0 auto;}
 .four-inner{background-image: url(../image/fresh.jpg) ; width: 100%; height: 75%;
     background-size: cover; 
     background-position: center;
@@ -387,6 +387,7 @@ ul, li {list-style-type: none; }
     .slider span {font-size: 50px;}
 
     /*section-four*/
+    .news-head {width:90%;margin: 0 auto;}
     .four-inner h2 {font-size: 20px;}
     .four-inner p {font-size: 15px;}
 
